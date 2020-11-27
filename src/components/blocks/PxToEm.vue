@@ -1,5 +1,5 @@
 <template>
-    <section class="component-blocks meyerencode form-layout-basic">
+    <section class="component-blocks pxtoem form-layout-basic">
         <h2>
             PX to EM
         </h2>
@@ -95,7 +95,7 @@ export default {
 </script>
 
 <style scoped>
-.meyerencode {
+.pxtoem {
     width: 600px;
     max-width: 100%;
 
