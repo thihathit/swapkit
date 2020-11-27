@@ -26,3 +26,19 @@ export const pxToEm = ({ relation, px, em }) => {
         return value
     }
 }
+
+export const fixHtml = string => {
+    const node = document.createElement('DIV')
+
+    node.innerHTML = string
+
+    const result = node.innerHTML
+
+    node.remove()
+
+    return result
+}
+
+export const validHtml = string => {
+    return string == fixHtml(string)
+}

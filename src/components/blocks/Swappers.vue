@@ -26,6 +26,18 @@
             </Modal>
         </teleport>
         <!-- PX to EM -->
+
+        <!-- HTML to JSX -->
+        <div class="type-controls" @click.prevent="onSwitch('html2jsx')">
+            HTML to JSX
+        </div>
+
+        <teleport to="body">
+            <Modal :show="isSwitch('html2jsx')" :onBlur="() => onSwitch(null)">
+                <HtmlToJsx />
+            </Modal>
+        </teleport>
+        <!-- HTML to JSX -->
     </section>
 </template>
 
@@ -33,6 +45,7 @@
 import { reactive } from 'vue'
 
 import MeyerEncode from '@/components/blocks/MeyerEncode.vue'
+import HtmlToJsx from '@/components/blocks/HtmlToJsx.vue'
 import PxToEm from '@/components/blocks/PxToEm.vue'
 import Modal from '@/components/blocks/Modal.vue'
 
@@ -41,6 +54,7 @@ export default {
     components: {
         MeyerEncode,
         PxToEm,
+        HtmlToJsx,
         Modal,
     },
     setup: function() {

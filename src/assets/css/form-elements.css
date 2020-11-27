@@ -19,6 +19,7 @@
     margin-bottom: 10px;
 }
 
+.field-elements code,
 .field-elements textarea,
 .field-elements input:not([type='checkbox']):not([type='radio']) {
     width: 100%;
@@ -29,9 +30,10 @@
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 
-    transition: 0.3s all;
+    transition: 0.3s border, 0.3s background-color, 0.3s border-radius;
 }
 .field-elements textarea {
+    min-width: 100%;
     max-width: 100%;
 }
 .field-elements button {
