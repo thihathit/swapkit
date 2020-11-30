@@ -40,6 +40,24 @@
                     </div>
                 </div>
             </div>
+
+            <div>
+                <div class="form-layout-basic">
+                    <h3>Javascript</h3>
+
+                    <div class="field-elements">
+                        <textarea v-model="states.js" />
+                    </div>
+
+                    <div class="form-actions">
+                        <div class="field-elements">
+                            <button @click.prevent="minifyJs">
+                                Minify JS
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -47,6 +65,7 @@
 <script>
 import { reactive } from 'vue'
 import cssMinify from 'clean-css'
+import { minify as jsMinify } from 'terser'
 import { minify as htmlMinify } from 'html-minifier-terser'
 
 import { fixHtml } from '@/misc/utilities.js'
@@ -57,6 +76,7 @@ export default {
         const states = reactive({
             html: '',
             css: '',
+            js: '',
         })
 
         const minifyHtml = () => {
@@ -72,13 +92,22 @@ export default {
                 useShortDoctype: true,
             })
         }
+
         const minifyCss = () => {
             const result = new cssMinify({}).minify(states.css)
 
             if (result.styles) states.css = result.styles
         }
 
-        return { states, minifyHtml, minifyCss }
+        const minifyJs = async () => {
+            const result = await jsMinify(states.js)
+                .then(res => res.code)
+                .catch(err => err.message)
+
+            states.js = result
+        }
+
+        return { states, minifyHtml, minifyCss, minifyJs }
     },
 }
 </script>

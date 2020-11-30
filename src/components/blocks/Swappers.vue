@@ -41,7 +41,7 @@
 
         <!-- Minify -->
         <div class="type-controls" @click.prevent="onSwitch('minify')">
-            Minify HTML / CSS
+            Minify HTML / CSS / JS
         </div>
 
         <teleport to="body">
