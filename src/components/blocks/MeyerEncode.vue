@@ -51,4 +51,8 @@ export default {
 
     color: #fff;
 }
+
+textarea {
+    height: 300px;
+}
 </style>

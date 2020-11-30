@@ -38,6 +38,18 @@
             </Modal>
         </teleport>
         <!-- HTML to JSX -->
+
+        <!-- Minify -->
+        <div class="type-controls" @click.prevent="onSwitch('minify')">
+            Minify HTML / CSS
+        </div>
+
+        <teleport to="body">
+            <Modal :show="isSwitch('minify')" :onBlur="() => onSwitch(null)">
+                <Minify />
+            </Modal>
+        </teleport>
+        <!-- HTML to JSX -->
     </section>
 </template>
 
@@ -46,6 +58,7 @@ import { reactive } from 'vue'
 
 import MeyerEncode from '@/components/blocks/MeyerEncode.vue'
 import HtmlToJsx from '@/components/blocks/HtmlToJsx.vue'
+import Minify from '@/components/blocks/Minify.vue'
 import PxToEm from '@/components/blocks/PxToEm.vue'
 import Modal from '@/components/blocks/Modal.vue'
 
@@ -55,6 +68,7 @@ export default {
         MeyerEncode,
         PxToEm,
         HtmlToJsx,
+        Minify,
         Modal,
     },
     setup: function() {
