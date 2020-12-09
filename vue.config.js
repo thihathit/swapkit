@@ -1,6 +1,6 @@
 module.exports = {
-  pwa: {
-    name: 'Swapkit - Dev Tools',
-    themeColor: '#5522E6'
-  }
+    pwa: {
+        name: process.env.VUE_APP_TITLE,
+        themeColor: '#5522E6',
+    },
 }
