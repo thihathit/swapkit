@@ -7,6 +7,7 @@ import '@/assets/css/fonts.css'
 import '@/assets/css/defaults.css'
 import '@/assets/css/texts.css'
 import '@/assets/css/form-elements.css'
+import './registerServiceWorker'
 
 createApp(App)
     .use(router)
