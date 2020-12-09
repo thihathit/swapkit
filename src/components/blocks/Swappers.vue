@@ -113,4 +113,15 @@ export default {
 .type-controls:hover {
     background-color: #42b983;
 }
+
+@media only screen and (max-width: 800px) {
+    .swappers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 550px) {
+    .swappers {
+        grid-template-columns: 100%;
+    }
+}
 </style>
