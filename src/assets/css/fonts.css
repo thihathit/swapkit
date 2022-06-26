@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/* font-family
+---------------------------------------------------------------*/
+html {
+    font-family: 'Poppins';
+}
+input,
+textarea,
+option,
+select,
+button {
+    font-family: inherit;
+}
+/*=============================================================*/
+
+/* font-size
+---------------------------------------------------------------*/
+html {
+    font-size: 16px;
+}
+/*
+  .font-size--0_8 {
+    font-size: 0.8em;
+  }
+  .font-size--0_9 {
+    font-size: 0.9em;
+  }
+  .font-size--1_1 {
+    font-size: 1.1em;
+  }
+  .font-size--1_11 {
+    font-size: 1.11em;
+  }
+  .font-size--1_12 {
+    font-size: 1.12em;
+  }
+  .font-size--1_15 {
+    font-size: 1.15em;
+  }
+  .font-size--1_2 {
+    font-size: 1.2em;
+  }
+  .font-size--1_283 {
+    font-size: 1.286em;
+  }
+  .font-size--1_3 {
+    font-size: 1.3em;
+  }
+  .font-size--1_4 {
+    font-size: 1.4em;
+  }
+  .font-size--1_5 {
+    font-size: 1.5em;
+  }
+  */
+/*=============================================================*/
+
+/* font-weight
+---------------------------------------------------------------*/
+html {
+    font-weight: 400;
+}
+b,
+strong {
+    font-weight: 600;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+}
+
+.font-weight--w400 {
+    font-weight: 400;
+}
+.font-weight--w500 {
+    font-weight: 500;
+}
+.font-weight--w600 {
+    font-weight: 600;
+}
+.font-weight--w700 {
+    font-weight: 700;
+}
+/*=============================================================*/
+
+/* line-height
+---------------------------------------------------------------*/
+html {
+    line-height: 1.3;
+}
+/*=============================================================*/

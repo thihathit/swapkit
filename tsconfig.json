@@ -5,14 +5,32 @@
     "module": "esnext",
     "moduleResolution": "node",
     "strict": true,
+    "allowJs": true,
     "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "$views/*": ["src/views/*"],
+      "$router/*": ["src/router/*"],
+      "$misc/*": ["src/misc/*"],
+      "$blocks/*": ["src/components/blocks/*"],
+      "$layouts/*": ["src/components/layouts/*"],
+      "$components/*": ["src/components/*"],
+      "$assets/*": ["src/assets/*"],
+      "$plugins/*": ["src/plugins/*"],
+      "$app/*": ["src/*"]
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": [
+    "src/plugins/*.js",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.vue"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

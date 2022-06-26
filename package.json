@@ -10,11 +10,18 @@
   },
   "dependencies": {
     "@tauri-apps/api": "^1.0.1",
-    "vue": "^3.2.25"
+    "css-simple-minifier": "^2.0.0",
+    "htmltojsx-too": "^2.0.1",
+    "terser": "^5.14.1",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.16"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.0.0",
+    "@types/node": "^18.0.0",
     "@vitejs/plugin-vue": "^2.3.3",
+    "prettier": "^2.7.1",
+    "rollup-plugin-ts-paths-resolve": "^1.7.1",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
     "vue-tsc": "^0.34.7"
