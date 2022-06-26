@@ -1,4 +1,23 @@
-# Vue 3 + TypeScript + Vite
+# Vue 3 + TypeScript + Vite + Tauri
+
+**OSX Development:**
+
+- Install Rust as per official doc.
+- Install xcode-select, you might want to follow Tauri doc.
+
+Run followings
+
+```bash
+yarn
+
+# Develop
+yarn tauri dev
+
+# Build
+yarn tauri build
+```
+
+---
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
